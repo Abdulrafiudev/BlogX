@@ -213,7 +213,7 @@ li{
   font-family: 'Times New Roman', Times, serif;
   margin-top: 0.9375rem;
   margin-left: 1.25rem;
-  margin-right: 1.25rem;
+  margin-right: 1.9rem;
   margin-bottom: 1.875rem;
 }
 .blog_title{
@@ -237,7 +237,19 @@ li{
     white-space: inherit;
   }
   .blog_body{
-    font-size: 1.125rem;
+    font-size: 1rem;
+  }
+  .main_content{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.875rem;
+  
   }
 
 
