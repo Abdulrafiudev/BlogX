@@ -14,8 +14,12 @@ body{
   top: 0;
   left: 0;
   right: 0;
+  z-index: 2;
   
   
+}
+a{
+  text-decoration: none;
 }
 .developer{
   height: 35px;
@@ -67,12 +71,19 @@ h1{
   padding: 20px 10px;
   border-radius: 5px;
   font-family: Anton;
+  
   font-size: 14px;
   transition:  0.5s;
 }
 .button:hover{
   background-color: white;
   color: black;
+}
+.new_container{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .post_section{
   position: absolute;
@@ -94,13 +105,17 @@ h1{
   border-style: solid;
   border-color: white;
   font-size: 14px;
+  padding-left: 10px;
 }
 .content_area{
-  height: 200px;
+  height: 220px;
   border-radius: 5px;
   border-width: 1px;
   border-style: solid;
   border-color: white;
+  font-size: 14px;
+  padding-top: 10px;
+  padding: 10px;
 }
 
 .word{
@@ -115,6 +130,92 @@ h1{
 .button_1{
   width: 100px;
   height: 50px;
+  background-color: black;
+  border-radius: 5px;
+  font-family: Anton;
+  font-size: 16px;
+  transition:  0.5s;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button_1:hover{
+   background-color: white;
+   color: black;
+}
+.title{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-bottom: -5px;
+}
+.body{
+  background-color: white;
+
+}
+.header_name_2{
+  color: black;
+}
+.post_content{
+position: relative;
+margin-bottom: 20px;
+
+}
+.work{
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+/*.div_1{
+  float: left;
+}
+.div_2{
+  float: right;
+}
+.clear{
+  clear: both;
+}*/
+.text_delete_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.delete_button{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border: #FBF6EE;
+  margin-right: 30px;
   
- 
+}
+.delete_icon{
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+
+
+}
+
+li{
+  list-style: none;
+}
+.blog_body{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+.blog_title{
+  font-family: Roboto;
+  font-size: 30px;
 }

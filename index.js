@@ -31,17 +31,21 @@ app.post('/post', (req, res) => {
     console.log(posts)
     res.render(`post_2.ejs`, {title, content, posts})
 });
-
-app.get('/post/:id', (req, res) => {
-    let id = req.params.id;
-    let post = posts[id];
-   
-    res.render(`post.ejs`, { post, posts});
+app.get('/post', (req, res) => {
+    let title = req.body.title;
+    let content = req.body.content
+ 
+  
+    console.log(posts)
+    res.render(`post_2.ejs`, {title, content, posts})
 });
+
+
 
 app.post(`/delete/:id`, (req, res) => {
     let id = req.params.id;
     let post = posts[id]
+  
 
     if (post){
         posts.splice(id, 1)

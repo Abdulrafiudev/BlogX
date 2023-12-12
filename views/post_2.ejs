@@ -1,18 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Butcherman&family=Caveat&family=Kalam:wght@300&family=Libre+Baskerville&family=Montserrat:wght@400;600;700&family=Nosifer&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Butcherman&family=Caveat&family=DM+Sans:opsz@9..40&family=Kalam:wght@300&family=Libre+Baskerville&family=Montserrat:wght@400;600;700&family=Nosifer&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main.css">
     <title><%= title %></title>
-</head>
-<body>
-    <h1><%= title %></h1>
-    <p><%= content %></p>
-    <a href="/">Back to Home</a>
-    <% posts.forEach((post, index) => { %>
-        <form action="/delete/<%= index %>" method="Post">
-          <button type="submit"> Delete </button>
-      </form>
-    <% })  %>
+ </head>
+<body class="body">
+    <div class="header">
+        <div class="right_section">
+            <a href="/"> <div class="header_name header_name_2"> BlogX.io </div> </a>
+        </div>
+        <div class="left_section">
+            <img src="/images/developer.jpg" alt=" developer's picture " class="developer">
+        </div>
+      </div>
+
+    <div class="post_content">
+        <div class="work">
+            <% posts.forEach((post, index) => { %>
+                <div class="text_delete_container">
+               
+                   <div class="div_1"> <h1 class="blog_title"> <%= post.title %></h1> </div>
+        
+                   <div class="div_2">  
+                    <form action="/delete/<%= index %>" method="post">
+                      <button type="submit" class="delete_button"> <img src="/images/delete_1.png" alt="delete icon" class="delete_icon"> </button>
+                     </form>
+                   </div>
+                                    
+                </div>
+        
+                <div class="clear">
+                    <ul>
+        
+                        <li>
+                            <p class="blog_body"><%= post.content %></p>
+                        </li>
+                
+                    </ul>
+                                     
+                </div>
+                <% })  %>
+        </div>
+            
+     
+  </div>
+
+   
 </body>
 </html>

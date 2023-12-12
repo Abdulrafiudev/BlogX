@@ -21,17 +21,18 @@
         <div class="main_content">
                 <h1> Create your unique blog Post </h1>
                 <p class="paragraph"> Keep track of all your activities here at Blogx.io. </p>
-                <a href="/newpost" class="button"> Create a blog post </a>
+                <div class="new_container">
+                    <a href="/newpost" class="button"> Create a blog post </a>
+                    <a href="/post" class="button"> See blog post </a>
+                </div>
+              
+                
         </div>
             
     </div>
 
 
-    <ul>
-        <% posts.forEach((post, index) => { %>
-            <li><a href="/post/<%= index %>"><%= post.title %></a></li>
-        <% }); %>
-</ul>
+
 
 
 <script src="/background.js"></script>
