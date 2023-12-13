@@ -251,6 +251,9 @@ li{
     gap: 1.875rem;
   
   }
+  .word{
+    font-size: 1.875rem;
+  }
 
 
 }
