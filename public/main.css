@@ -215,6 +215,8 @@ li{
   margin-left: 1.25rem;
   margin-right: 1.9rem;
   margin-bottom: 1.875rem;
+  white-space: pre-line;
+
 }
 .blog_title{
   font-family: Arial;
@@ -236,9 +238,8 @@ li{
   h1{
     white-space: inherit;
   }
-  .blog_body{
-    font-size: 1rem;
-  }
+ 
+
   .main_content{
     position: absolute;
     top: 25%;
